@@ -19,4 +19,8 @@ public class RNVideoCompressionModule extends ReactContextBaseJavaModule {
   public String getName() {
     return "RNVideoCompression";
   }
+    @ReactMethod
+  public void show(String message, int duration) {
+    Toast.makeText(getReactApplicationContext(), message, duration).show();
+  }
 }
