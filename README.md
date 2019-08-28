@@ -47,7 +47,9 @@
 ```javascript
 import RNVideoCompression from 'react-native-video-compression';
 
-// TODO: What to do with the module?
-RNVideoCompression;
+RNVideoCompression.getCompressedFile(imagefilePath)
+.then(res => console.log(res))
+
+It will print compressed video file path.
 ```
   
