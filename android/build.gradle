@@ -18,11 +18,11 @@ buildscript {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 23
+    compileSdkVersion 28
 
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 22
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
     }
@@ -37,15 +37,15 @@ repositories {
 }
 
 dependencies {
-    compile 'com.facebook.react:react-native:+'
+    implementation 'com.facebook.react:react-native:+'
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    androidTestImplementaion('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:25.1.1'
-    testCompile 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:25.1.1'
+    testImplementaion 'junit:junit:4.12'
 
-    compile 'com.googlecode.mp4parser:isoparser:1.0.6'
-    compile 'org.aspectj:aspectjrt:1.8.2' // This version is used by isoparser:1.0.6
+    implementation 'com.googlecode.mp4parser:isoparser:1.0.6'
+    implementation 'org.aspectj:aspectjrt:1.8.2' // This version is used by isoparser:1.0.6
 }
   
