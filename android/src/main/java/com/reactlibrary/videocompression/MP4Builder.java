@@ -1,4 +1,3 @@
-
 package com.reactlibrary.videocompression;
 
 import android.annotation.TargetApi;
